@@ -1,4 +1,4 @@
 # JS-Udemy
-Repository to contain the codes os the learning of javascript. Every subject mastered has a folder in this repo.
+Repository to contain the codes in the learning of javascript. Every subject mastered has a folder on this repo.
 
 ----------------------------------------------------------------------------------------------------
