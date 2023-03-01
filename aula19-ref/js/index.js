@@ -2,7 +2,7 @@ function eventoSubmit (){
     const form = document.querySelector('.form');
     
     // form.onsubmit = function (evento) {
-        //     evento.preventDefault();
+        //     evento.preventDefault();             //maneira mais antiga de fazer o mesmo que nas linhas abaixo
         //     alert(1);
         //     console.log(typeof(evento));
         // };
