@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*Esse import foi feito direto do site da google fonts em que foi possível selecionar ela
+e importar conforme a seleção*/
+
+:root {
+    --primary-color: rgb(13, 106, 134);
+    --primary-color-darker: rgb(7, 66, 83);
+    --primary-color-ligther: rgb(86, 184, 211);
+    --primary-color-inverted: rgb(51, 110, 28);
+    --error: rgb(135, 41, 13);
+    --all_rigth: rgb(86, 211, 113);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);/*E se usam elas assim: var(nome)*/
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: rgb(168, 166, 189);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(24, 22, 22);
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 2px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+    background: var(--primary-color-darker);
+}
+
+form button:active{
+    background: var(--primary-color-inverted);
+}
+
+button {
+    border-radius: 25px;
+}
+
+form {
+    width: 130px;
+}
+
+.but {
+    margin-left: 37%;
+}
+
+.botaHora {
+    background: var(--primary-color-ligther);
+    width: 100%;
+    height: 65px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
