@@ -1,3 +1,10 @@
+let nome = window.prompt("Digite o seu nome");
+const nomeP = document.querySelector(".nome");
+if (nome == null){
+    nome = 'Visitante';
+}
+nomeP.innerHTML += ` Bem vinda(o), ${nome}!`
+
 function eventoSubmit(){
     document.querySelector('.form').addEventListener('submit', function (e){
         const horas = document.querySelector('.horas');
@@ -17,7 +24,7 @@ function pegaHora(){
     return dataFormatada;
 }
 
-function formataData(data){
+function getDiaSemana(data){
     let dia;
     switch (data.getDay()) {
         case 0: dia = 'Domingo';
@@ -37,9 +44,10 @@ function formataData(data){
         default: dia = '';
         break;
     }
+    return dia;
+}
 
-    let diaMes = data.getDate();
-
+function getMes(data){
     let mes;
     switch (data.getMonth()){
         case 0: mes = 'Janeiro';
@@ -69,10 +77,31 @@ function formataData(data){
         default: mes = '';
         break;
     }
+    return mes;
+}
 
+function getHora(data){
     let hora = data.getHours() >= 10 ? data.getHours() : `0${data.getHours()}`;
-    let minutos = data.getMinutes() >= 10 ? data.getMinutes() : `0${data.getMinutes()}`;
+    return hora;
+}
+
+function getMinutes(data){
+    let minutos = data.getMinutes() >= 10 ? data.getMinutes() : `0${data.getMinutes()}`
+    return minutos;
+}
+
+function getSeconds(data){
     let segundos = data.getSeconds() >= 10 ? data.getSeconds() : `0${data.getSeconds()}`;
+    return segundos;
+}
+
+function formataData(data){
+    let dia = getDiaSemana(data);
+    let diaMes = data.getDate();
+    let mes = getMes(data);
+    let hora = getHora(data);
+    let minutos = getMinutes(data);
+    let segundos = getSeconds(data);
 
     return `${dia}, ${diaMes} de ${mes} de ${data.getFullYear()} <br> ${hora}:${minutos}:${segundos}`;
 }

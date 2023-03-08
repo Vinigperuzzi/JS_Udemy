@@ -3,7 +3,7 @@
 e importar conforme a seleção*/
 
 :root {
-    --primary-color: rgb(13, 106, 134);/*Pode-se declarar variáveis em css com essa sintaxe (deve inicar com --)*/
+    --primary-color: rgb(13, 106, 134);
     --primary-color-darker: rgb(7, 66, 83);
     --primary-color-ligther: rgb(86, 184, 211);
     --primary-color-inverted: rgb(51, 110, 28);
@@ -14,17 +14,6 @@ e importar conforme a seleção*/
 *{
     box-sizing: border-box;
     outline: 0;
-    margin: 15px;
-}
-
-.titulo {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-section section h1, section section p{
-    box-sizing: content-box;
-    width: 50%;
 }
 
 body{
@@ -39,7 +28,7 @@ body{
 .container {
     max-width: 640px;
     margin: 50px auto;
-    background: var(--primary-color-inverted);
+    background: rgb(168, 166, 189);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(24, 22, 22);
@@ -70,9 +59,6 @@ form button{
     height: 50px;
     cursor: pointer;
     margin-top: 30px;
-    border-radius: 25px;
-    width: 100px;
-    margin-left: 42%;
 }
 
 form button:hover{
@@ -80,36 +66,27 @@ form button:hover{
 }
 
 form button:active{
-    background: var(--error);
+    background: var(--primary-color-inverted);
 }
 
-.resultado {
+button {
+    border-radius: 25px;
+}
+
+form {
+    width: 130px;
+}
+
+.but {
+    margin-left: 37%;
+}
+
+.botaHora {
     background: var(--primary-color-ligther);
+    width: 100%;
+    height: 65px;
+    border-radius: 25px;
+    color: white;
     text-align: center;
-    font-family: 'Open sans', sans-serif;
-    color: rgb(66, 63, 63);
-    border-radius: 10px;
-}
-
-.titulo p {
-    background: rgb(123, 233, 138);
-    border-radius: 15px;
-    box-sizing: content-box;
-    margin: 0 20px 0 20px;
-    padding: 0 0 0 5px;
-    box-shadow: 10px 10px 25px;
-}
-
-h1 {
-    background: rgb(123, 184, 233);
-    border-radius: 15px;
-    box-sizing: content-box;
-    margin: 0 20px 0 20px;
-    padding: 0 0 0 5px;
-    box-shadow: 10px 10px 25px;
-    text-align: center;
-}
-
-.centro {
-    margin: 50px 25% 0 25%;
+    font-size: 25px;
 }

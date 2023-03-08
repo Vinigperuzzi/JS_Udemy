@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Para esconder a barra de rolagem na página*/
+    
+}
+
+#Menu-superior {
+    background-color: #0a6d706e;
+    box-sizing: content-box;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 0px #0531336e;
+    
+}
+
+h1 {
+    background-color: #2e97b7;
+    box-sizing: content-box;
+    width: 100vw;
+    padding: 0px;
+    color: #a4dcb9;
+    text-align: center;
+}
+
+#item-Menu{
+    float: left;
+    box-sizing: content-box;
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+}
+
+#item-Menu a {
+    text-decoration: none;
+    color: green;
+}
+
+#item-Menu::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+p{
+    font-size: 20px;
+}
+
+#Primeiro-conteudo, #Segundo-conteudo, #Terceiro-conteudo, #Quarto-conteudo, #Quinto-conteudo{
+    box-sizing: content-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fdf4b0;
+    margin-top: 50px;
+    padding-top: 90px;
+}
